@@ -12,7 +12,7 @@ public class AccountTest {
 		Account account1 = new Account("Jane Green", 50.00);
 		Account account2 = new Account("John Blue", -7.53);
 		
-		//Ixibe saldo inicial de cada objeto
+		//Exibe saldo inicial de cada objeto
 		System.out.printf("%s balance: %.2f\n", account1.getName(), account1.getBalance());
 		System.out.printf("%s balance: %.2f\n", account2.getName(), account2.getBalance());
 		
