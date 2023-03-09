@@ -1,68 +1,79 @@
 package areaTriangulo;
 import java.util.Scanner;
 
-public class Triangulo {
+import entidade.Triangulo;
+
+public class calculandoArea {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		double xA, xB, xC, yA, yB, yC;
-		double areaX, areaY, pX, pY;
+		Triangulo x, y;
+		x = new Triangulo();
+		y = new Triangulo();
+		double a = 0, b = 0, c = 0;
 		
 			System.out.println("Entre com as medidas do triangulo X: ");
 			System.out.println("Lado A: ");
-			xA = input.nextDouble();
+			a = input.nextDouble();
+			x.setA(a);
 			System.out.println("Lado B: ");
-			xB = input.nextDouble();
+			b = input.nextDouble();
+			x.setB(b);
 			System.out.println("Lado C: ");
-			xC = input.nextDouble();
+			c = input.nextDouble();
+			x.setC(c);
 			
-			while(xA <= 0) {
+			while(x.getA() <= 0) {
 				System.out.println("Informe um maior que zero para o lado 'A' do triangulo: ");
-				xA = input.nextDouble();
+				a = input.nextDouble();
+				x.setA(a);
 			}
 			
-			while(xB <= 0) {
+			while(x.getB() <= 0) {
 				System.out.println("Informe um maior que zero para o lado 'B' do triangulo: ");
-				xB = input.nextDouble();
+				b = input.nextDouble();
+				x.setB(b);
 			}
 			
-			while(xC <= 0) {
+			while(x.getC() <= 0) {
 				System.out.println("Informe um maior que zero para o lado 'C' do triangulo: ");
-				xC = input.nextDouble();
+				c = input.nextDouble();
+				x.setC(c);
 			}
 			
 			System.out.println("Entre com as medidas do triangulo Y: ");
 			System.out.println("Lado A: ");
-			yA = input.nextDouble();
+			a = input.nextDouble();
+			y.setA(a);
 			System.out.println("Lado B: ");
-			yB = input.nextDouble();
+			b = input.nextDouble();
+			y.setB(b);
 			System.out.println("Lado C: ");
-			yC = input.nextDouble();
+			c = input.nextDouble();
+			y.setC(c);
 			
-			while(yA <= 0) {
+			while(y.getA() <= 0) {
 				System.out.println("Informe um maior que zero para o lado 'A' do triangulo: ");
-				yA = input.nextDouble();
+				a = input.nextDouble();
+				y.setA(a);
 			}
 			
-			while(yB <= 0) {
+			while(y.getB() <= 0) {
 				System.out.println("Informe um maior que zero para o lado 'B' do triangulo: ");
-				yB = input.nextDouble();
+				b = input.nextDouble();
+				y.setB(b);
 			}
 			
-			while(yC <= 0) {
+			while(y.getC() <= 0) {
 				System.out.println("Informe um maior que zero para o lado 'C' do triangulo: ");
-				yC = input.nextDouble();
+				c = input.nextDouble();
+				y.setC(c);
 			}
 			
-			pX = (xA + xB + xC) / 2;
-			pY= (yA + yB + yC) / 2;
-			areaX = Math.sqrt(pX * (pX - xA) * (pX - xB) * (pX -xC ));
-			areaY = Math.sqrt(pY * (pY - yA) * (pY - yB) * (pY -yC ));
+			System.out.printf("Aréa do trinauglo 'X': %.4f%n", x.getArea());
+			System.out.printf("Aréa do trinauglo 'Y': %.4f%n", y.getArea());
 			
-			System.out.printf("Aréa do trinauglo 'X': %.4f%n", areaX);
-			System.out.printf("Aréa do trinauglo 'Y': %.4f%n", areaY);
-			
-			if(areaX > areaY) {
+			if(x.getArea() > y.getArea()) {
 				System.out.println("A areá do triangulo X é maior que a aréa do triangulo Y");
 			}else {
 				System.out.println("A areá do triangulo Y é maior que a aréa do triangulo X");
