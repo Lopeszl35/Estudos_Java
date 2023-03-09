@@ -8,7 +8,7 @@ public class QuadradoECubo {
 		Scanner input = new Scanner(System.in);
 		double num;
 		
-		do {
+		do {//Enquano o usuário não informar um valor postivo o programa não ira adiante
 			System.out.println("Informe um número positivo: ");
 			num = input.nextDouble();
 			if(num <= 0) {
