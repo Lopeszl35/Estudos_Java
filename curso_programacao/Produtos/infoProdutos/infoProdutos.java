@@ -30,6 +30,11 @@ public class infoProdutos {
 		System.out.println("-2- Remover produto do estoque: ");
 		condicao = input.nextInt();
 		
+		while(condicao != 1 && condicao != 2) {
+			System.out.println("Informe somente '1' ou '2': ");
+			condicao = input.nextInt();
+		}
+		
 		if(condicao == 1) {
 			System.out.println("Informe a quantidade que serão adicionados ao estoque: ");
 			quantidade = input.nextInt();
