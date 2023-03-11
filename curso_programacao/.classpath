@@ -12,5 +12,6 @@
 	<classpathentry kind="src" path="RaioVolume"/>
 	<classpathentry kind="src" path="Dolar"/>
 	<classpathentry kind="src" path="Construtor"/>
+	<classpathentry kind="src" path="Banco"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
