@@ -48,5 +48,14 @@ public class Produto {
 		this.estoque -= quantidade;
 		this.precoTotal = this.preco * this.estoque;
 	}
+	
+	public String toString() {
+		return "Produto: " + nome
+				+ ", Preço: R$"
+				+ preco
+				+", Unidades: " + estoque
+				+", Total: R$"
+				+ getprecoTotal();
+	}
 
 }
