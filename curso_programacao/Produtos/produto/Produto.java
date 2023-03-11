@@ -52,10 +52,10 @@ public class Produto {
 	public String toString() {
 		return "Produto: " + nome
 				+ ", Preço: R$"
-				+ preco
+				+ String.format("%.2f", preco)
 				+", Unidades: " + estoque
 				+", Total: R$"
-				+ getprecoTotal();
+				+ String.format("%.2f", getprecoTotal());
 	}
 
 }
