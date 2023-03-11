@@ -28,9 +28,10 @@ public class infoProdutos {
 		System.out.println("========== Oque deseja fazer a seguir? ============");
 		System.out.println("-1- Adicionar produto ao estoque: ");
 		System.out.println("-2- Remover produto do estoque: ");
+		System.out.println("-0- Finalizar programa: ");
 		condicao = input.nextInt();
 		
-		while(condicao != 1 && condicao != 2) {
+		while(condicao != 1 && condicao != 2 && condicao != 0) {
 			System.out.println("Informe somente '1' ou '2': ");
 			condicao = input.nextInt();
 		}
@@ -44,13 +45,16 @@ public class infoProdutos {
 					produto.getEstoque(), produto.getprecoTotal());
 		}
 		
-		if(condicao == 2) {
+		else if(condicao == 2) {
 			System.out.println("Informe a quantidade que serão removidos ao estoque: ");
 			quantidade = input.nextInt();
 			produto.removeEstoque(quantidade);
 			System.out.println("============ Produto Atualizado ==========");
 			System.out.printf("Produto: %s, Preço: %.2f, Unidades: %d, Total: %.2f", produto.getNome(), produto.getPreco(), 
 					produto.getEstoque(), produto.getprecoTotal());
+		}
+		else {
+			System.exit(0);
 		}
 		
 		
