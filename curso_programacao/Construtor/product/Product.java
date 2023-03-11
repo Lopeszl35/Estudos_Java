@@ -6,13 +6,27 @@ public class Product {
 	public double price;
 	public int quantity;
 	
+	//Construtor padrão
+	public Product() {
+		
+	}
+	
+	//Sobrecarga
 	//Declarando um construtor com parâmetros de inicialização
 	public Product(String name, double price, int quantity) {
 		this.name = name;
 		this.price = price;
 		this.quantity = quantity;
-		
 	}
+	
+	//Sobrecarga
+	//Construtor que não recebe a quantidade no estoque, inicializa-se em '0'
+	public Product(String name, double price) {
+		this.name = name;
+		this.price = price;
+	}
+	
+	
 
 	public double totalValueInStock() {
 		return price * quantity;
