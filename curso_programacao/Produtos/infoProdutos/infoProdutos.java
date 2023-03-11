@@ -22,8 +22,7 @@ public class infoProdutos {
 		int estoque = input.nextInt();
 		produto.setEstoque(estoque);
 		
-		System.out.printf("Produto: %s, Preço: %.2f, Unidades: %d, Total: %.2f%n%n", produto.getNome(), produto.getPreco(), 
-				produto.getEstoque(), produto.getprecoTotal());
+		System.out.println(produto.toString());
 
 		System.out.println("========== Oque deseja fazer a seguir? ============");
 		System.out.println("-1- Adicionar produto ao estoque: ");
@@ -41,8 +40,7 @@ public class infoProdutos {
 			quantidade = input.nextInt();
 			produto.addEstoque(quantidade);
 			System.out.println("============ Produto Atualizado ==========");
-			System.out.printf("Produto: %s, Preço: %.2f, Unidades: %d, Total: %.2f", produto.getNome(), produto.getPreco(), 
-					produto.getEstoque(), produto.getprecoTotal());
+			System.out.printf(produto.toString());
 		}
 		
 		else if(condicao == 2) {
@@ -50,8 +48,7 @@ public class infoProdutos {
 			quantidade = input.nextInt();
 			produto.removeEstoque(quantidade);
 			System.out.println("============ Produto Atualizado ==========");
-			System.out.printf("Produto: %s, Preço: %.2f, Unidades: %d, Total: %.2f", produto.getNome(), produto.getPreco(), 
-					produto.getEstoque(), produto.getprecoTotal());
+			System.out.printf(produto.toString());
 		}
 		else {
 			System.exit(0);
