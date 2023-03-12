@@ -18,30 +18,7 @@ public class Conta{
 	}
 
 	public Conta(String numeroConta, String nome) {
-		boolean isNumeric = true;
-		do {// Verifica se o número da conta contém caracteres
-			for (int i = 0; i < numeroConta.length(); i++) {
-				if (!Character.isDigit(numeroConta.charAt(i))) {
-					isNumeric = false;
-					break;
-				}
-			}
-			
-			if (isNumeric == false) {
-				System.out.println();
-				System.out.println("Account number is invalid");
-				System.out.println("Enter only numerical digits: ");
-				this.numeroConta = input.nextLine();
-			}
-
-			isNumeric = true;
-			for (int i = 0; i < this.numeroConta.length(); i++) {
-				if (!Character.isDigit(this.numeroConta.charAt(i))) {
-					isNumeric = false;
-					break;
-				}
-			}
-		}while(isNumeric == false);
+		this.numeroConta = controle.isDigit(numeroConta);
 		this.nome = nome;
 	}
 	
