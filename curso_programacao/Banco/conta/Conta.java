@@ -14,7 +14,7 @@ public class Conta extends Banco {
 		super();
 		this.numeroConta = numeroConta;
 		this.nome = nome;
-		this.saldoConta = saldoConta;
+		depositoSaldo(saldoConta);
 	}
 
 	public Conta(int numeroConta, String nome) {
@@ -40,7 +40,7 @@ public class Conta extends Banco {
 	}
 
 	public void saqueSaldo(double saque) {
-		this.saldoConta -= saque;
+		this.saldoConta -= (saque + 5);
 	}
 
 	public void depositoSaldo(double deposito) {
@@ -78,6 +78,7 @@ public class Conta extends Banco {
 				break;
 			case 2:
 				System.out.println("Enter a withdraw value: ");
+				System.out.print("$5 fee per withdrawal ");
 				balance = input.nextDouble();
 				this.saqueSaldo(balance);
 				System.out.println(account);
@@ -91,6 +92,6 @@ public class Conta extends Banco {
 	public String toString() {
 		return "Account: " + numeroConta 
 				+ ", Holder: " + nome 
-				+ ", Balance: R$ " + saldoConta;
+				+ ", Balance: R$ " + String.format("%.2f", saldoConta);
 	}
 }
