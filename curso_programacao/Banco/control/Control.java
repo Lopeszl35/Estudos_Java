@@ -5,7 +5,9 @@ import java.util.Scanner;
 import conta.Conta;
 
 public class Control {
+	Scanner input = new Scanner(System.in);
 	private Conta conta;
+	private String numeroConta;
 
 	public Control(Conta conta) {
 		this.conta = conta;
@@ -57,5 +59,34 @@ public class Control {
 			}
 		} while (decision != 0);
 		input.close();
+	}
+	
+	
+	public String isDigit(String numeroConta) {
+		boolean isNumeric = true;
+		do {// Verifica se o número da conta contém caracteres
+			for (int i = 0; i < numeroConta.length(); i++) {
+				if (!Character.isDigit(numeroConta.charAt(i))) {
+					isNumeric = false;
+					break;
+				}
+			}
+			
+			if (isNumeric == false) {
+				System.out.println();
+				System.out.println("Account number is invalid");
+				System.out.println("Enter only numerical digits: ");
+				this.numeroConta = input.nextLine();
+			}
+
+			isNumeric = true;
+			for (int i = 0; i < this.numeroConta.length(); i++) {
+				if (!Character.isDigit(this.numeroConta.charAt(i))) {
+					isNumeric = false;
+					break;
+				}
+			}
+		}while(isNumeric == false);
+		return this.numeroConta;
 	}
 }
