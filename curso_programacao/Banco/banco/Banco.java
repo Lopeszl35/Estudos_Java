@@ -13,8 +13,6 @@ public class Banco {
 
 		System.out.println("Enter account number: ");
 		String numberAccount = input.nextLine();
-		Control control = new Control();
-		control.isDigit(numberAccount);//Verifica se o usuário informou a conta corretamente
 
 		System.out.println("Enter account holder: ");
 		String name = input.nextLine();
@@ -36,7 +34,7 @@ public class Banco {
 
 			// Instancia um objeto que recebera um deposito
 			Conta account = new Conta(numberAccount, name, balance);
-			Control control2 = new Control(account); 
+			Control control2 = new Control(account);
 			System.out.println("========= Account Data ===========");
 			System.out.println(account);
 
