@@ -1,23 +1,70 @@
 package conta;
 
-//import java.util.Scanner;
+import java.util.Scanner;
 
 import banco.Banco;
 
 public class Conta extends Banco {
+	Scanner input = new Scanner(System.in);
 
 	private String numeroConta;
 	private String nome;
 	private double saldoConta;
 
 	public Conta(String numeroConta, String nome, double saldoConta) {
-		this.numeroConta = numeroConta;
+		boolean isNumeric = true;
+		do {// Verifica se o número da conta contém caracteres
+			for (int i = 0; i < numeroConta.length(); i++) {
+				if (!Character.isDigit(numeroConta.charAt(i))) {
+					isNumeric = false;
+					break;
+				}
+			}
+
+			if (isNumeric == false) {
+				System.out.println();
+				System.out.println("Account number is invalid");
+				System.out.println("Enter only numerical digits: ");
+				this.numeroConta = input.nextLine();
+			}
+
+			isNumeric = true;
+			for (int i = 0; i < this.numeroConta.length(); i++) {
+				if (!Character.isDigit(this.numeroConta.charAt(i))) {
+					isNumeric = false;
+					break;
+				}
+			}
+		}while(isNumeric == false);
 		this.nome = nome;
 		depositoSaldo(saldoConta);
 	}
 
 	public Conta(String numeroConta, String nome) {
-		this.numeroConta = numeroConta;
+		boolean isNumeric = true;
+		do {// Verifica se o número da conta contém caracteres
+			for (int i = 0; i < numeroConta.length(); i++) {
+				if (!Character.isDigit(numeroConta.charAt(i))) {
+					isNumeric = false;
+					break;
+				}
+			}
+
+			if (isNumeric == false) {
+				System.out.println();
+				System.out.println("Account number is invalid");
+				System.out.println("Enter only numerical digits: ");
+				this.numeroConta = input.nextLine();
+			}
+
+			isNumeric = true;
+			for (int i = 0; i < this.numeroConta.length(); i++) {
+				if (!Character.isDigit(this.numeroConta.charAt(i))) {
+					isNumeric = false;
+					break;
+				}
+			}
+		}while(isNumeric == false);
 		this.nome = nome;
 	}
 	
