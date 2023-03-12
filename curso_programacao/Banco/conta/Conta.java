@@ -1,25 +1,22 @@
 package conta;
-
-import java.util.Scanner;
 import control.Control;
 
 public class Conta{
-	Scanner input = new Scanner(System.in);
-	Control controle = new Control();
+	Control control = new Control();
 
 	private String numeroConta;
 	private String nome;
 	private double saldoConta;
 
 	public Conta(String numeroConta, String nome, double saldoConta) {
-		this.numeroConta = controle.isDigit(numeroConta);
-		this.nome = nome;
+		this.numeroConta = control.isDigit(numeroConta);
+		this.nome = control.isCaracter(nome);
 		depositoSaldo(saldoConta);
 	}
 
 	public Conta(String numeroConta, String nome) {
-		this.numeroConta = controle.isDigit(numeroConta);
-		this.nome = nome;
+		this.numeroConta = control.isDigit(numeroConta);
+		this.nome = control.isCaracter(nome);
 	}
 	
 	public Conta() {

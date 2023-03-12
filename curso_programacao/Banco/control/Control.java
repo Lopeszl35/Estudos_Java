@@ -8,6 +8,7 @@ public class Control {
 	Scanner input = new Scanner(System.in);
 	private Conta conta;
 	private String numeroConta;
+	private String nomeConta;
 
 	public Control(Conta conta) {
 		this.conta = conta;
@@ -61,7 +62,7 @@ public class Control {
 		input.close();
 	}
 	
-	
+	//Checa se o usuário informou o numero da conta corretamente
 	public String isDigit(String numeroConta) {
 		boolean isNumeric = true;
 		do {// Verifica se o número da conta contém caracteres
@@ -78,6 +79,9 @@ public class Control {
 				System.out.println("Enter only numerical digits: ");
 				this.numeroConta = input.nextLine();
 			}
+			else {
+				this.numeroConta = numeroConta;
+			}
 
 			isNumeric = true;
 			for (int i = 0; i < this.numeroConta.length(); i++) {
@@ -88,5 +92,37 @@ public class Control {
 			}
 		}while(isNumeric == false);
 		return this.numeroConta;
+	}
+	
+	//Checa se o usuário informou o nome da conta corretamente
+	public String isCaracter(String nomeConta) {
+		boolean isCaracter = true;
+		do {
+			for(int i = 0; i < nomeConta.length(); i++) {
+				if(!Character.isAlphabetic(nomeConta.charAt(i))) {
+					isCaracter = false;
+					break;
+				}
+			}
+				
+				if(isCaracter == false) {
+					System.out.println();
+					System.out.println("Invalid account name");
+					System.out.println("inform only letters: ");
+					this.nomeConta = input.nextLine();
+				}
+				else {
+					this.nomeConta = nomeConta;
+				}
+				isCaracter = true;
+				for(int i = 0; i < this.nomeConta.length(); i++) {
+					if(!Character.isAlphabetic(this.nomeConta.charAt(i))) {
+						isCaracter = false;
+						break;
+					}
+				}
+			
+		}while(isCaracter == false);
+		return this.nomeConta;
 	}
 }
