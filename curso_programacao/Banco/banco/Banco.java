@@ -27,7 +27,7 @@ public class Banco {
 			System.out.println("Invalid input. Please enter a single character.");
 			conditionStr = input.nextLine();
 		}
-
+		
 		if (conditionStr.equalsIgnoreCase("y")) {// Caso tenha um depósito inicial
 			System.out.println("Enter initial deposit value: ");
 			balance = input.nextDouble();

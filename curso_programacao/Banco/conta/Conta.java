@@ -20,7 +20,7 @@ public class Conta extends Banco {
 					break;
 				}
 			}
-
+			
 			if (isNumeric == false) {
 				System.out.println();
 				System.out.println("Account number is invalid");

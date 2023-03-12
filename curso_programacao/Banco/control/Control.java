@@ -17,7 +17,7 @@ public class Control {
 	public Control() {
 
 	}
-
+	
 	public void decisions(Conta account) {
 		Scanner input = new Scanner(System.in);
 		int decision;
