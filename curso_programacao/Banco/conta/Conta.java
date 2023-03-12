@@ -26,6 +26,7 @@ public class Conta{
 					break;
 				}
 			}
+			
 			if (isNumeric == false) {
 				System.out.println();
 				System.out.println("Account number is invalid");
