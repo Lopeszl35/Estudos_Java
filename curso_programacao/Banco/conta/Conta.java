@@ -2,6 +2,7 @@ package conta;
 import control.Control;
 
 public class Conta{
+	//Objeto para chamar métodos da classe Control
 	Control control = new Control();
 
 	private String numeroConta;

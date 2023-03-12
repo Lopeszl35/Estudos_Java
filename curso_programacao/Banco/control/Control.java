@@ -12,9 +12,9 @@ public class Control {
 
 	public Control(Conta conta) {
 		this.conta = conta;
-		this.conta.getNome();
+		/*this.conta.getNome();
 		this.conta.getNumeroConta();
-		this.conta.getSaldoConta();
+		this.conta.getSaldoConta();*/
 	}
 
 	public Control() {
@@ -52,7 +52,7 @@ public class Control {
 				break;
 			case 2:
 				System.out.println("Enter a withdraw value: ");
-				System.out.print("$5 fee per withdrawal ");
+				System.out.print("$5 fee per withdrawal: ");
 				balance = input.nextDouble();
 				conta.saqueSaldo(balance);
 				System.out.println(account);
@@ -99,7 +99,8 @@ public class Control {
 		boolean isCaracter = true;
 		do {
 			for(int i = 0; i < nomeConta.length(); i++) {
-				if(!Character.isAlphabetic(nomeConta.charAt(i))) {
+				if(!Character.isAlphabetic(nomeConta.charAt(i)) && 
+						!Character.isWhitespace(nomeConta.charAt(i))) {
 					isCaracter = false;
 					break;
 				}
@@ -116,7 +117,8 @@ public class Control {
 				}
 				isCaracter = true;
 				for(int i = 0; i < this.nomeConta.length(); i++) {
-					if(!Character.isAlphabetic(this.nomeConta.charAt(i))) {
+					if(!Character.isAlphabetic(this.nomeConta.charAt(i)) && 
+							!Character.isWhitespace(this.nomeConta.charAt(i))) {
 						isCaracter = false;
 						break;
 					}
