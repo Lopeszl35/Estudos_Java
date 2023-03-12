@@ -9,16 +9,15 @@ public class Conta extends Banco {
 	private int numeroConta;
 	private String nome;
 	private double saldoConta;
-	private Banco banco;// Variavel para armazenar objeto Banco
 
-	public Conta(int numeroConta, String nome, double saldoConta, Banco banco) {
+	public Conta(int numeroConta, String nome, double saldoConta) {
 		super();
 		this.numeroConta = numeroConta;
 		this.nome = nome;
 		this.saldoConta = saldoConta;
 	}
 
-	public Conta(int numeroConta, String nome, Banco banco) {
+	public Conta(int numeroConta, String nome) {
 		super();
 		this.numeroConta = numeroConta;
 		this.nome = nome;
@@ -48,7 +47,7 @@ public class Conta extends Banco {
 		this.saldoConta += deposito;
 	}
 
-	public void decisions(Banco account) {
+	public void decisions(Conta account) {
 		Scanner input = new Scanner(System.in);
 		double balance;
 		int decision;

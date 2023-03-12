@@ -33,8 +33,7 @@ public class Banco {
 			balance = input.nextDouble();
 
 			// Instancia um objeto que recebera um deposito
-			Banco banco = new Banco();
-			Conta account = new Conta(numberAccount, name, balance, banco);
+			Conta account = new Conta(numberAccount, name, balance);
 
 			System.out.println("========= Account Data ===========");
 			System.out.println(account);
@@ -45,8 +44,7 @@ public class Banco {
 
 		else if (conditionStr.equalsIgnoreCase("n")) {// Caso não tenha um depósito inicial
 			// Instancia um objeto não que recebera um deposito
-			Banco banco = new Banco();
-			Conta accountNotBalance = new Conta(numberAccount, name, banco);
+			Conta accountNotBalance = new Conta(numberAccount, name);
 			System.out.println("========= Account Data ===========");
 			System.out.println(accountNotBalance);
 
