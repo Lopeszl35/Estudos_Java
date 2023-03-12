@@ -3,16 +3,18 @@ package banco;
 import java.util.Scanner;
 
 import conta.Conta;
+import control.Control;
 
 public class Banco {
 
 	public static void main(String[] args) {
 		Scanner input = new Scanner(System.in);
-		double balance;
+		double balance = 0;
 
 		System.out.println("Enter account number: ");
-		int numberAccount = input.nextInt();
-		input.nextLine();
+		String numberAccount = input.nextLine();
+		Control control = new Control();
+		control.isDigit(numberAccount);//Verifica se o usuário informou a conta corretamente
 
 		System.out.println("Enter account holder: ");
 		String name = input.nextLine();
@@ -34,22 +36,23 @@ public class Banco {
 
 			// Instancia um objeto que recebera um deposito
 			Conta account = new Conta(numberAccount, name, balance);
-
+			Control control2 = new Control(account); 
 			System.out.println("========= Account Data ===========");
 			System.out.println(account);
 
 			// O usuário tomará uma decisão de depositar ou sacar dinheiro
-			account.decisions(account);
+			control2.decisions(account);
 		}
 
 		else if (conditionStr.equalsIgnoreCase("n")) {// Caso não tenha um depósito inicial
 			// Instancia um objeto não que recebera um deposito
 			Conta accountNotBalance = new Conta(numberAccount, name);
+			Control control3 = new Control(accountNotBalance);
 			System.out.println("========= Account Data ===========");
 			System.out.println(accountNotBalance);
 
 			// O usuário tomará uma decisão de depositar ou sacar dinheiro
-			accountNotBalance.decisions(accountNotBalance);
+			control3.decisions(accountNotBalance);
 		}
 
 		input.close();
