@@ -12,7 +12,9 @@ public class Produto {
 		
 		System.out.println("Informe a quantidade de produtos: ");
 		quantidadeProdutos = input.nextInt();
+		//Cria um objeto sendo um array
 		ControlProduto[] produto = new ControlProduto[quantidadeProdutos];
+		
 		//For se inicia em 0 e vai até o final do tamanho do produto
 		for(int i = 0; i < produto.length; i++) {
 			input.nextLine();
