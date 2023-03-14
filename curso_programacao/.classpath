@@ -15,5 +15,6 @@
 	<classpathentry kind="src" path="MediaAltura"/>
 	<classpathentry kind="src" path="ProdutosVetor"/>
 	<classpathentry kind="src" path="negNumbers"/>
+	<classpathentry kind="src" path="SomaMedia"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
