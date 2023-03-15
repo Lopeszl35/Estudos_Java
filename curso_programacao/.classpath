@@ -17,5 +17,6 @@
 	<classpathentry kind="src" path="negNumbers"/>
 	<classpathentry kind="src" path="SomaMedia"/>
 	<classpathentry kind="src" path="AlturaPessoas"/>
+	<classpathentry kind="src" path="MaiorValor"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
