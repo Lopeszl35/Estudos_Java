@@ -20,12 +20,14 @@ public class ControlValor {
 		
 	}
 	
+	//Constructor que ira receber o retorno do método Static getMaiorValor
 	public ControlValor(double valor, int posicao) {
 		this.valor = valor;
 		this.posicao = posicao;
 		
 	}
 	
+	//Método ira receber o array com os valores
 	public static ControlValor getMaiorValor(Valor[] valor) {
 		double maior = Double.NEGATIVE_INFINITY;
 		int posicao = -1;
@@ -34,7 +36,7 @@ public class ControlValor {
 				maior = valor[i].getNumero();
 				posicao = i;
 			}
-		}
+		}//Ira retorna um novo objeto da classe com o valor e a posição do valor no array
 		return new ControlValor(maior, posicao);
 	}
 

@@ -22,11 +22,11 @@ public class MaiorValor {
 			valor[i] = new Valor(numero);
 		}
 		
-		new ControlValor();
+		
 		ControlValor controlValor = ControlValor.getMaiorValor(valor);
 		
 		System.out.println("Maior valor: " + controlValor.getValor());
-		System.out.println("Posição maior valor: " + controlValor.getPosicao());
+		System.out.println("Posição no array maior valor: " + controlValor.getPosicao());
 		
 		
 		input.close();
