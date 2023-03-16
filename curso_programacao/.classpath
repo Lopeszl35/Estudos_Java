@@ -19,5 +19,6 @@
 	<classpathentry kind="src" path="AlturaPessoas"/>
 	<classpathentry kind="src" path="MaiorValor"/>
 	<classpathentry kind="src" path="somaVetores"/>
+	<classpathentry kind="src" path="mediaVetor"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
