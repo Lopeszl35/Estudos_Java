@@ -20,5 +20,6 @@
 	<classpathentry kind="src" path="MaiorValor"/>
 	<classpathentry kind="src" path="somaVetores"/>
 	<classpathentry kind="src" path="mediaVetor"/>
+	<classpathentry kind="src" path="mediaPar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
