@@ -21,5 +21,6 @@
 	<classpathentry kind="src" path="somaVetores"/>
 	<classpathentry kind="src" path="mediaVetor"/>
 	<classpathentry kind="src" path="mediaPar"/>
+	<classpathentry kind="src" path="PessoaMaisVelha"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
