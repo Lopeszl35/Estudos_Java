@@ -14,8 +14,8 @@ public class EnterPessoa {
 		
 		int[] idade = new int[tamanho];
 		String[] nome = new String[tamanho];
-		
 		ControlPessoa[] pessoa = new ControlPessoa[tamanho];
+		
 		input.nextLine();
 		
 		for(int i = 0; i < pessoa.length; i++) {
