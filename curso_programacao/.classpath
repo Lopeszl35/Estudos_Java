@@ -23,5 +23,6 @@
 	<classpathentry kind="src" path="mediaPar"/>
 	<classpathentry kind="src" path="PessoaMaisVelha"/>
 	<classpathentry kind="src" path="aprovados"/>
+	<classpathentry kind="src" path="alturaHomemMulher"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
