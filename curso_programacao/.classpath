@@ -27,5 +27,6 @@
 	<classpathentry kind="src" path="alugerQuartos"/>
 	<classpathentry kind="src" path="listas"/>
 	<classpathentry kind="src" path="funcionarios"/>
+	<classpathentry kind="src" path="Employee"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
