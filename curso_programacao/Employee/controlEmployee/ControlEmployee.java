@@ -49,6 +49,11 @@ public class ControlEmployee {
 		this.salary = salary;
 	}
 	
+	public boolean hasId(List<ControlEmployee> list, int id) {
+		ControlEmployee employee = list.stream().filter(x -> x.getId() == id).findFirst().orElse(null);
+		return employee != null;
+	}
+	
 	public void increaseSalary(double percentage) {
 		salary += (salary * percentage / 100.0);
 	}

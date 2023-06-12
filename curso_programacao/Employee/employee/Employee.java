@@ -24,6 +24,11 @@ public final class Employee {
 			System.out.println("Employee #"+(i+1) + ": ");
 			System.out.print("ID: ");
 			Integer id = input.nextInt();
+			ControlEmployee idemployee = new ControlEmployee();
+			while(idemployee.hasId(list, id)) {
+				System.out.println("Id already taken! Try again: ");
+				id = input.nextInt();
+			}
 			System.out.println("Name: ");
 			input.nextLine();//Limpando o buffer do teclado
 			String name = input.nextLine();
