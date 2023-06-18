@@ -15,8 +15,8 @@ public class Matrix {
 		int[][] mat = new int[n][n];
 		
 		//Lendo os valores para a matrix
-		for(int i = 0; i < n; i++) {//Primeiro for para as linhas
-			for(int j = 0; j < n; j++) {//Segundo for para as colunas
+		for(int i = 0; i < mat.length; i++) {//Primeiro for para as linhas
+			for(int j = 0; j < mat[i].length; j++) {//Segundo for para as colunas
 				System.out.println("Informe o valor para a linha "+ "[" + i + "]"  + " coluna " + "[" + j + "]");
 				mat[i][j] = input.nextInt();
 			}
@@ -24,7 +24,7 @@ public class Matrix {
 		
 		//Imprimindo números da diagonal
 		System.out.println("Main diagonal:");
-		for(int i = 0; i < n; i++) {
+		for(int i = 0; i < mat.length; i++) {
 			System.out.print(mat[i][i] + " ");
 		}
 		System.out.println();
@@ -32,8 +32,8 @@ public class Matrix {
 		
 		//Contando a quantidade de números negativos
 		int negative = 0;
-		for(int i = 0; i < n; i++) {
-			for(int j = 0; j < n; j++) {
+		for(int i = 0; i < mat.length; i++) {
+			for(int j = 0; j < mat[i].length; j++) {
 				if(mat[i][j] < 0) {
 					negative++;
 				}
