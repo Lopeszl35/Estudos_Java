@@ -67,12 +67,6 @@ public class Matrix2 {
 				}
 			}
 			
-		
-		
-		
-		
-		
-		
 		input.close();
 	}
 

@@ -30,5 +30,7 @@
 	<classpathentry kind="src" path="Employee"/>
 	<classpathentry kind="src" path="Matrix"/>
 	<classpathentry kind="src" path="Matrix2"/>
+	<classpathentry kind="src" path="TimeData"/>
+	<classpathentry kind="src" path="DataHora"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
