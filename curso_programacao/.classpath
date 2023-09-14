@@ -32,5 +32,8 @@
 	<classpathentry kind="src" path="Matrix2"/>
 	<classpathentry kind="src" path="TimeData"/>
 	<classpathentry kind="src" path="DataHora"/>
+	<classpathentry kind="src" path="FormatacaoData"/>
+	<classpathentry kind="src" path="ConvertDataHora"/>
+	<classpathentry kind="src" path="calculosDataHora"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
