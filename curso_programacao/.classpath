@@ -35,5 +35,7 @@
 	<classpathentry kind="src" path="FormatacaoData"/>
 	<classpathentry kind="src" path="ConvertDataHora"/>
 	<classpathentry kind="src" path="calculosDataHora"/>
+	<classpathentry kind="src" path="Enumeração"/>
+	<classpathentry kind="src" path="Worker"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
