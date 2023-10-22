@@ -88,6 +88,7 @@ public class ClientOrder {
             		"\nPrice: " + item.getProduct().getPrice() + 
             		"\nQuantity: " + item.getQuantity() 
                     + "\nSubtotal: " + item.subTotal() + "\n");
+            System.out.println();
         }
 
         System.out.println("Total Order Price: " + order.getTotal());
