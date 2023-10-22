@@ -39,5 +39,6 @@
 	<classpathentry kind="src" path="Worker"/>
 	<classpathentry kind="src" path="post"/>
 	<classpathentry kind="src" path="PedidoOrdem"/>
+	<classpathentry kind="src" path="EstudosCalendar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
