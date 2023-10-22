@@ -63,16 +63,16 @@ public class Worker {
   
 	
 	public void addContract(HourContract contract) {
-		contracts.add(contract);
+		this.contracts.add(contract);
 	}
 	
 	public void removeContract(HourContract contract) {
-		contracts.remove(contract);
+		this.contracts.remove(contract);
 	}
 	
 	public double income(int year, int month) {
 		double sum = baseSalary;
-		for(HourContract c : contracts) {
+		for(HourContract c : this.contracts) {
 			int c_year = c.getDate().getYear();
 			int c_month = c.getDate().getMonthValue();
 			if(year == c_year && month == c_month) {

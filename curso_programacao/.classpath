@@ -37,5 +37,7 @@
 	<classpathentry kind="src" path="calculosDataHora"/>
 	<classpathentry kind="src" path="Enumeração"/>
 	<classpathentry kind="src" path="Worker"/>
+	<classpathentry kind="src" path="post"/>
+	<classpathentry kind="src" path="PedidoOrdem"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
