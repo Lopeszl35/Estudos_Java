@@ -24,8 +24,6 @@ public enum Estacoes {
 		case JANEIRO:
 		case FEVEREIRO:
 			return INVERNO;
-		
-		
 		default:
 			throw new IllegalArgumentException("Mês inválido");
 		}
