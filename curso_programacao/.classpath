@@ -44,5 +44,9 @@
 	<classpathentry kind="src" path="HerancaPolimorfismo"/>
 	<classpathentry kind="src" path="produtosEtiqueta"/>
 	<classpathentry kind="src" path="metodosAbstratos"/>
+<<<<<<< HEAD
+	<classpathentry kind="src" path="impostoJuridicoFisico"/>
+=======
+>>>>>>> branch 'master' of https://github.com/Lopeszl35/Estudos_Java.git
 	<classpathentry kind="output" path="bin"/>
 </classpath>
