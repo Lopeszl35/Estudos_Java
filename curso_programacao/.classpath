@@ -42,5 +42,6 @@
 	<classpathentry kind="src" path="EstudosCalendar"/>
 	<classpathentry kind="src" path="estudosEnum"/>
 	<classpathentry kind="src" path="HerancaPolimorfismo"/>
+	<classpathentry kind="src" path="produtosEtiqueta"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
