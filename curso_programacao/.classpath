@@ -1,52 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <classpath>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-17">
-		<attributes>
-			<attribute name="module" value="true"/>
-		</attributes>
-	</classpathentry>
-	<classpathentry kind="src" path="src"/>
-	<classpathentry kind="src" path="Funcionario"/>
-	<classpathentry kind="src" path="AprovacaoAluno"/>
-	<classpathentry kind="src" path="RaioVolume"/>
-	<classpathentry kind="src" path="Dolar"/>
-	<classpathentry kind="src" path="Construtor"/>
-	<classpathentry kind="src" path="Banco"/>
-	<classpathentry kind="src" path="MediaAltura"/>
-	<classpathentry kind="src" path="ProdutosVetor"/>
-	<classpathentry kind="src" path="negNumbers"/>
-	<classpathentry kind="src" path="SomaMedia"/>
-	<classpathentry kind="src" path="AlturaPessoas"/>
-	<classpathentry kind="src" path="MaiorValor"/>
-	<classpathentry kind="src" path="somaVetores"/>
-	<classpathentry kind="src" path="mediaVetor"/>
-	<classpathentry kind="src" path="mediaPar"/>
-	<classpathentry kind="src" path="PessoaMaisVelha"/>
-	<classpathentry kind="src" path="aprovados"/>
-	<classpathentry kind="src" path="alturaHomemMulher"/>
-	<classpathentry kind="src" path="alugerQuartos"/>
-	<classpathentry kind="src" path="listas"/>
-	<classpathentry kind="src" path="funcionarios"/>
-	<classpathentry kind="src" path="Employee"/>
-	<classpathentry kind="src" path="Matrix"/>
-	<classpathentry kind="src" path="Matrix2"/>
-	<classpathentry kind="src" path="TimeData"/>
-	<classpathentry kind="src" path="DataHora"/>
-	<classpathentry kind="src" path="FormatacaoData"/>
-	<classpathentry kind="src" path="ConvertDataHora"/>
-	<classpathentry kind="src" path="calculosDataHora"/>
-	<classpathentry kind="src" path="Enumeração"/>
-	<classpathentry kind="src" path="Worker"/>
-	<classpathentry kind="src" path="post"/>
-	<classpathentry kind="src" path="PedidoOrdem"/>
-	<classpathentry kind="src" path="EstudosCalendar"/>
-	<classpathentry kind="src" path="estudosEnum"/>
-	<classpathentry kind="src" path="HerancaPolimorfismo"/>
-	<classpathentry kind="src" path="produtosEtiqueta"/>
-	<classpathentry kind="src" path="metodosAbstratos"/>
-<<<<<<< HEAD
-	<classpathentry kind="src" path="impostoJuridicoFisico"/>
-=======
->>>>>>> branch 'master' of https://github.com/Lopeszl35/Estudos_Java.git
+	<classpathentry kind="src" path="cadastroVeiculo"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
